@@ -7,7 +7,7 @@ const userpage = () => {
     const navigate = useNavigate()
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get('http://localhost:3001/userpage')
+        axios.get('https://mern-vercel-app1.vercel.app/userpage')
         .then(res => {
             console.log(res)
             if(res.data.valid) {
